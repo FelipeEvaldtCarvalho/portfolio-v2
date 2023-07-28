@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("./_typography.scss");
+@import "./_helper";
+@import "./_colors";
+@import "./_reset.scss";
+@import "./_break-points.scss";
+
+html[data-theme="light"] {
+  --color-text: #{$dark};
+  --color-background: #{$light};
+  --neutral-gray: #{$light-gray};
+}
+html[data-theme="dark"] {
+  --color-text: #{$light};
+  --color-background: #{$dark};
+  --neutral-gray: #{$dark-gray};
+}

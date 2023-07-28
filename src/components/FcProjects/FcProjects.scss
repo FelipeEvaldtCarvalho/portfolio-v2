@@ -1,0 +1,205 @@
+@import "../../style/animations";
+@import "../../style/colors";
+@import "../../style/break-points";
+
+.projects {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @media screen and (min-width: $tablet-min) {
+    padding: 10%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__main {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      @media screen and (min-width: $tablet-min) {
+        width: 100%;
+      }
+
+      @media screen and (min-width: $small-screen-min) {
+        order: 1;
+        flex-direction: row;
+        min-height: 425px;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @media (min-width: $small-screen-min) {
+          width: 50%;
+        }
+
+        h2 {
+          order: 2;
+          color: $main-green;
+          font-size: 20px;
+          font-weight: 600;
+
+          @media screen and (min-width: $tablet-min) {
+            font-size: 25px;
+          }
+        }
+        p {
+          order: 3;
+          font-size: 16px;
+          font-weight: 400;
+
+          @media screen and (min-width: $tablet-min) {
+            order: 2;
+            font-size: 20px;
+          }
+        }
+
+        &__icons {
+          order: 1;
+          width: 100%;
+          display: flex;
+          gap: 2rem;
+          justify-content: center;
+          align-items: center;
+
+          @media screen and (min-width: $tablet-min) {
+            order: 3;
+          }
+
+          @media screen and (min-width: $medium-screen-min) {
+            justify-content: flex-start;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 30px;
+            color: var(--color-text);
+            transition: 0.5s all ease;
+
+            &:hover {
+              color: $main-green;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      &__carousel {
+        width: 100%;
+        position: relative;
+        transition: 0.5s all ease;
+        max-width: 500px;
+        margin: auto;
+
+        @media (min-width: $small-screen-min) {
+          width: 50%;
+          max-width: initial;
+          margin: 0;
+        }
+
+        &__video {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+          opacity: 0;
+          transition: 0.5s all ease;
+
+          &.mobile {
+            max-width: 400px;
+
+            @media screen and (min-width: $tablet-min) {
+              display: none;
+            }
+          }
+          &.desktop {
+            display: none;
+
+            @media screen and (min-width: $tablet-min) {
+              display: initial;
+            }
+          }
+        }
+        .active {
+          opacity: 1;
+          position: relative;
+          transition: 0.6s all ease;
+        }
+      }
+    }
+
+    &__nav {
+      order: 1;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (min-width: $tablet-min) {
+        border: 1.5px solid var(--neutral-gray);
+      }
+      @media screen and (min-width: $medium-screen-min) {
+        order: 2;
+      }
+
+      &__btn {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid var(--neutral-gray);
+        background: transparent;
+        color: var(--color-text);
+
+        @media screen and (min-width: $tablet-min) {
+          display: none !important;
+        }
+      }
+
+      &__selector {
+        display: none;
+
+        @media (min-width: $tablet-min) {
+          display: initial !important;
+          flex-grow: 1;
+        }
+
+        &--selected {
+          font-size: 20px;
+
+          padding: 8px 0;
+          flex-grow: 1;
+          background: $green-gradient;
+          background-size: 1000% 1000%;
+          animation: gradient-bg 25s ease infinite;
+          color: var(--color-background);
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__link {
+      order: 4;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      color: $main-green;
+      ion-icon {
+        font-size: 35px;
+      }
+    }
+  }
+}

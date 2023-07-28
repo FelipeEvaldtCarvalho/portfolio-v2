@@ -1,0 +1,36 @@
+@import "./_colors";
+@import "./animations";
+@import "./break-points";
+
+.link-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:focus {
+    outline: none;
+  }
+}
+
+.title-section {
+  background: $green-gradient;
+  background-size: 1000% 1000%;
+  animation: gradient-bg 25s ease infinite;
+  padding: 3px;
+  font-size: 27px;
+  color: var(--color-background);
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 32px;
+  }
+}
+
+.default-text {
+  font-size: 16px;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../../style/animations";
+@import "../../style/colors";
+@import "../../style/break-points";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 4rem;
+  gap: 3rem;
+
+  @media screen and (min-width: $tablet-min) {
+    padding: 10% 10% 0% 10%;
+    gap: 15%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__text {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &__img {
+    margin: 0 auto;
+    background: linear-gradient(177deg, #4cd7a9, #0e3528);
+    background-size: 400% 400%;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    min-width: 230px;
+    aspect-ratio: 1/1;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    animation: shapeAnimation 20s linear infinite,
+      gradientAnimation 5s linear infinite;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

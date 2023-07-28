@@ -1,0 +1,38 @@
+// base colors
+$dark: #212121;
+$light: #f3f3f3;
+$main-green: #4cd7a9;
+$lm-dark-green: #0e3528;
+$lm-medium-green: #42a786;
+$lm-light-green: #72ffd0;
+
+// GRAY
+$light-gray: #e0e0e0;
+$neutral-gray: #808080;
+$dark-gray: #494949;
+
+// icons colors
+$figma-orange-color: #f35328;
+$figma-salmon-color: #ff7668;
+$figma-purple-color: #a45efe;
+$figma-blue-color: #29befe;
+$figma-green-color: #23d187;
+$scss-color: #cf6d9c;
+$vue-primary-color: #48ba87;
+$vue-secundary-color: #415062;
+$react-color: #67dafb;
+$html-color: #ff5c2a;
+$css-color: #2e53e5;
+$js-color: #f7e029;
+
+// gradient
+
+$green-gradient: linear-gradient(
+  150deg,
+  rgba(0, 255, 171, 1) 0%,
+  rgba(64, 128, 106, 1) 20%,
+  rgba(0, 255, 171, 1) 40%,
+  rgba(64, 128, 106, 1) 60%,
+  rgba(0, 255, 171, 1) 80%,
+  rgba(64, 128, 106, 1) 100%
+);

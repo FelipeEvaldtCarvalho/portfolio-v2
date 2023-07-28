@@ -1,0 +1,24 @@
+@import "../../style/break-points";
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 4rem;
+  gap: 4rem;
+
+  @media (min-width: $tablet-min) {
+    padding: 10% 10% 0% 10%;
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+
+    @media (min-width: $tablet-min) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

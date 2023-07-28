@@ -1,0 +1,55 @@
+@import "../../style/break-points";
+@import "../../style/colors";
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  min-height: calc(100vh - 62px);
+  gap: 2vw;
+
+  @media screen and (min-width: $mobile-min) {
+    gap: 10px;
+    min-height: calc(100vh - 150px);
+    padding: 0 10%;
+    padding-bottom: 10%;
+  }
+}
+
+.next-icon {
+  position: absolute;
+  font-size: 30px;
+  visibility: visible;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: $neutral-gray;
+}
+
+.Typewriter__wrapper {
+  font-size: 16vw;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: $main-green;
+
+  @media screen and (min-width: $mobile-min) {
+    font-size: 80px;
+  }
+}
+
+.Typewriter__cursor {
+  font-size: 16vw;
+  @media screen and (min-width: $mobile-min) {
+    font-size: 80px;
+  }
+}
+
+h2.typography {
+  font-size: 7vw;
+  @media screen and (min-width: $mobile-min) {
+    font-size: 34px;
+  }
+}
