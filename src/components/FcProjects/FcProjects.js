@@ -4,20 +4,22 @@ import "./FcProjects.scss";
 import { projects, checkSelectedProject } from "../../services/projects";
 import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import { useSelector } from "react-redux";
 
 export const FcProjects = () => {
   const [selectedProject, setSelectedProject] = useState(0);
+  const windowWidth = useSelector((state) => state.settings.windowWidth);
   const { t } = useTranslation();
   const projectsSelectors = projects.map((project, index) => (
     <button
       className={`link-btn projects__content__nav__selector${
         checkSelectedProject(selectedProject, index) ? "--selected" : ""
       }`}
-      key={project.title}
+      key={`selector-${index}-${project.title}`}
       onClick={() =>
         checkSelectedProject(selectedProject, index)
-          ? setSelectedProject(index)
-          : false
+          ? false
+          : setSelectedProject(index)
       }
     >
       {t(`${project.title}`)}
@@ -40,40 +42,32 @@ export const FcProjects = () => {
   });
   const projectsCarousel = (
     <div className="projects__content__main__carousel" {...handlers}>
-      {projects.map((item, index) => {
-        return (
-          <>
-            <video
-              key={`mobile-video-${index}`}
-              className={`projects__content__main__carousel__video mobile ${
-                checkSelectedProject(selectedProject, index) ? "active" : ""
-              }`}
-              muted
-              autoPlay
-              loop
-            >
-              <source
-                key={`mobile-video-source-${index}`}
-                src={item.mobileVideo}
-              />
-            </video>
-            <video
-              key={`desktop-video-${index}`}
-              className={`projects__content__main__carousel__video desktop ${
-                checkSelectedProject(selectedProject, index) ? "active" : ""
-              }`}
-              muted
-              autoPlay
-              loop
-            >
-              <source
-                key={`desktop-video-source-${index}`}
-                src={item.desktopVideo}
-              />
-            </video>
-          </>
-        );
-      })}
+      {projects.map((item, index) => (
+        <video
+          key={index}
+          className={`projects__content__main__carousel__video mobile ${
+            checkSelectedProject(selectedProject, index) ? "active" : ""
+          }`}
+          muted
+          autoPlay
+          loop
+        >
+          <source key={index} src={item.mobileVideo} />
+        </video>
+      ))}
+      {projects.map((item, index) => (
+        <video
+          key={index}
+          className={`projects__content__main__carousel__video desktop ${
+            checkSelectedProject(selectedProject, index) ? "active" : ""
+          }`}
+          muted
+          autoPlay
+          loop
+        >
+          <source key={index} src={item.desktopVideo} />
+        </video>
+      ))}
     </div>
   );
 

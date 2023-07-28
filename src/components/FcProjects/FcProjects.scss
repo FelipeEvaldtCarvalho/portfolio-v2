@@ -143,6 +143,8 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      gap: 1px;
+      overflow: hidden;
 
       @media screen and (min-width: $tablet-min) {
         border: 1.5px solid var(--neutral-gray);
@@ -167,15 +169,32 @@
 
       &__selector {
         display: none;
+        transition: 0.5s ease all;
+        padding: 8px 0;
 
         @media (min-width: $tablet-min) {
+          position: relative;
           display: initial !important;
           flex-grow: 1;
+          font-weight: 500;
+          font-size: 20px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -1px;
+            height: 70%;
+            width: 1px;
+            background: var(--neutral-gray);
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
 
         &--selected {
           font-size: 20px;
-
+          transition: 0.5s ease all;
           padding: 8px 0;
           flex-grow: 1;
           background: $green-gradient;
@@ -183,6 +202,10 @@
           animation: gradient-bg 25s ease infinite;
           color: var(--color-background);
           font-weight: 600;
+
+          @media (min-width: $tablet-min) {
+            font-weight: 500;
+          }
         }
       }
     }
