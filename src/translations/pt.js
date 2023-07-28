@@ -47,6 +47,24 @@ const ptBr = {
         description: `Desenvolvido com Vue.js, meu principal objetivo com esse projeto foi manipular dados trazidos da API da Riot Games e apresentá-los para o usuário de forma interativa e intuitiva. Com o "Well Played", os usuários podem explorar e interagir com os dados dos personagens de maneira fácil e envolvente. Ao aproveitar a potência do Vue.js, pude criar uma interface de usuário dinâmica que permite aos usuários acessar e visualizar informações relacionadas ao jogo de forma simples.`,
       },
     },
+    experiences: {
+      title: "Experiências",
+      appmax: {
+        name: "Appmax",
+        positions: {
+          trainee: {
+            title: "Estágiario Fullstack 2022 - 2023",
+            description:
+              "No estágio aprendi sobre as ferramentasGit, Docker e Agile, desenvolvimento frontend com Vue.js e backend com Laravel. Experiência enriquecedora que impulsionou minha evolução como desenvolvedor frontend.",
+          },
+          junior: {
+            title: "Dev Frontend Junior 2023 - Presente",
+            description:
+              "Como junior tenho trabalhado intensamente com o framework Vue.js. Essa experiência tem sido de grande valor, pois me permite mergulhar profundamente no desenvolvimento de interfaces dinâmicas e interativas.",
+          },
+        },
+      },
+    },
   },
 };
 

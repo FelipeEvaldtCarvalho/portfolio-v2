@@ -6,6 +6,7 @@ import { InitResizeScreenWatcher } from "./services/helper";
 import { setInitialTheme } from "./services/theme";
 import { FcSkills } from "./components/FcSkills/FcSkills";
 import { FcProjects } from "./components/FcProjects/FcProjects";
+import { FcExperiences } from "./components/FcExperiences/FcExperiences";
 
 function App() {
   setInitialTheme();
@@ -19,6 +20,7 @@ function App() {
       <FcAboutMe />
       <FcSkills />
       <FcProjects />
+      <FcExperiences />
     </div>
   );
 }

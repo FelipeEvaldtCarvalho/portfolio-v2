@@ -4,11 +4,9 @@ import "./FcProjects.scss";
 import { projects, checkSelectedProject } from "../../services/projects";
 import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
-import { useSelector } from "react-redux";
 
 export const FcProjects = () => {
   const [selectedProject, setSelectedProject] = useState(0);
-  const windowWidth = useSelector((state) => state.settings.windowWidth);
   const { t } = useTranslation();
   const projectsSelectors = projects.map((project, index) => (
     <button
