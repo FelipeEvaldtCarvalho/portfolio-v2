@@ -9,9 +9,11 @@ html[data-theme="light"] {
   --color-text: #{$dark};
   --color-background: #{$light};
   --neutral-gray: #{$light-gray};
+  --contrast-gray: #{$dark-gray};
 }
 html[data-theme="dark"] {
   --color-text: #{$light};
   --color-background: #{$dark};
   --neutral-gray: #{$dark-gray};
+  --contrast-gray: #{$light-gray};
 }

@@ -1,0 +1,87 @@
+@import "../../style/colors";
+@import "../../style/break-points";
+@import "../../style/animations";
+
+.contact {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  @media screen and (min-width: $tablet-min) {
+    padding: 10% 10% 0 10%;
+  }
+
+  .content {
+    gap: 2rem;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet-min) {
+      flex-direction: row-reverse;
+      width: 100%;
+      gap: 1.5rem;
+    }
+
+    &__text {
+      gap: 3rem;
+
+      @media screen and (min-width: $tablet-min) {
+        width: 50%;
+      }
+
+      p {
+        @media screen and (min-width: $tablet-min) {
+          font-size: 20px;
+        }
+      }
+    }
+    .social {
+      ion-icon {
+        font-size: 35px;
+        color: $neutral-gray;
+        transition: all 0.6s ease;
+
+        @media screen and (min-width: $tablet-min) {
+          font-size: 45px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .contact-form {
+      @media screen and (min-width: $tablet-min) {
+        width: 50%;
+        padding-right: 10%;
+      }
+
+      &__btn {
+        margin-top: 16px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        font-size: 16px;
+        width: 130px;
+        font-weight: 600;
+        padding: 7px 0;
+        background: $green-gradient;
+        background-size: 1000% 1000%;
+        border: none;
+        color: var(--color-background);
+        animation: gradient-bg 25s ease infinite;
+        transition: 0.6s ease all;
+
+        &.gray {
+          background: $gray-gradient;
+          background-size: 1000% 1000%;
+          animation: gradient-bg 25s ease infinite;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

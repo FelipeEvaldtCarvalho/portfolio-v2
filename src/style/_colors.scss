@@ -36,3 +36,13 @@ $green-gradient: linear-gradient(
   rgba(0, 255, 171, 1) 80%,
   rgba(64, 128, 106, 1) 100%
 );
+
+$gray-gradient: linear-gradient(
+  150deg,
+  $neutral-gray 0%,
+  var(--contrast-gray) 20%,
+  $neutral-gray 40%,
+  var(--contrast-gray) 60%,
+  $neutral-gray 80%,
+  var(--contrast-gray) 100%
+);

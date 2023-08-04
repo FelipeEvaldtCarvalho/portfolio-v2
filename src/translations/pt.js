@@ -65,6 +65,16 @@ const ptBr = {
         },
       },
     },
+    contactMe: {
+      title: "Contato",
+      namePlaceholder: "Nome",
+      emailPlaceholder: "Email",
+      msgPlaceholder: "Mensagem",
+      send: "Enviar",
+      clean: "Limpar",
+      description:
+        "Estou ansioso para receber sua mensagem e ajudar a transformar suas ideias em realidade. Fique à vontade para entrar em contato ou conectar-se comigo em minhas redes. ",
+    },
   },
 };
 

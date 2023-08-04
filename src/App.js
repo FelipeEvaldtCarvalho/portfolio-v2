@@ -7,6 +7,7 @@ import { setInitialTheme } from "./services/theme";
 import { FcSkills } from "./components/FcSkills/FcSkills";
 import { FcProjects } from "./components/FcProjects/FcProjects";
 import { FcExperiences } from "./components/FcExperiences/FcExperiences";
+import { FcContactMe } from "./components/FcContactMe/FcContactMe";
 
 function App() {
   setInitialTheme();
@@ -21,6 +22,7 @@ function App() {
       <FcSkills />
       <FcProjects />
       <FcExperiences />
+      <FcContactMe />
     </div>
   );
 }

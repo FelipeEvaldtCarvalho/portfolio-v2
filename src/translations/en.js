@@ -65,6 +65,16 @@ const ptBr = {
         },
       },
     },
+    contactMe: {
+      title: "Contact me",
+      namePlaceholder: "Name",
+      emailPlaceholder: "Email",
+      msgPlaceholder: "Message",
+      send: "Send",
+      clean: "Reset",
+      description:
+        "I look forward to receiving your message and helping to turn your ideas into reality. Feel free to get in touch or connect with me on my social media.",
+    },
   },
 };
 
