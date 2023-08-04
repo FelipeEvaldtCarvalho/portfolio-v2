@@ -1,4 +1,3 @@
-//import { useSelector } from "react-redux";
 import { FcNavBar } from "./components/FcNavBar/FcNavBar";
 import { FcMain } from "./components/FcMain/FcMain";
 import { FcAboutMe } from "./components/FcAboutMe/FcAboutMe";
@@ -8,11 +7,10 @@ import { FcSkills } from "./components/FcSkills/FcSkills";
 import { FcProjects } from "./components/FcProjects/FcProjects";
 import { FcExperiences } from "./components/FcExperiences/FcExperiences";
 import { FcContactMe } from "./components/FcContactMe/FcContactMe";
+import { FcFooter } from "./components/FcFooter/FcFooter";
 
 function App() {
   setInitialTheme();
-  //const store = useSelector((state) => state);
-  //console.log(store);
   return (
     <div className="App">
       <InitResizeScreenWatcher />
@@ -23,6 +21,7 @@ function App() {
       <FcProjects />
       <FcExperiences />
       <FcContactMe />
+      <FcFooter />
     </div>
   );
 }

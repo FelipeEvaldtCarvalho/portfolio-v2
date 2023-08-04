@@ -75,6 +75,9 @@ const ptBr = {
       description:
         "I look forward to receiving your message and helping to turn your ideas into reality. Feel free to get in touch or connect with me on my social media.",
     },
+    footer: {
+      text: 'Designed in <span className="contrast">Figma</span> and coded in <span className="contrast">Visual Studio Code</span>. Made with <span className="contrast">React.js</span>, <span className="contrast">Sass</span> and <span className="contrast">Ui Material</span>.',
+    },
   },
 };
 

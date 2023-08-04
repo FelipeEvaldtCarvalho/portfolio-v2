@@ -1,0 +1,32 @@
+@import "../../style/colors";
+@import "../../style/break-points";
+@import "../../style/animations";
+
+.footer {
+  padding: 5rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+
+  @media screen and (min-width: $tablet-min) {
+    padding: 20% 10% 5%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  p {
+    font-weight: 500;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-min) {
+      text-align: start;
+      max-width: 50%;
+      font-size: 20px;
+    }
+  }
+
+  .contrast {
+    color: $main-green;
+  }
+}

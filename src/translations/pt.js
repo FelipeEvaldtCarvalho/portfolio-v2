@@ -75,6 +75,9 @@ const ptBr = {
       description:
         "Estou ansioso para receber sua mensagem e ajudar a transformar suas ideias em realidade. Fique à vontade para entrar em contato ou conectar-se comigo em minhas redes. ",
     },
+    footer: {
+      text: 'Desenhado no <span className="contrast">Figma</span> e desenvolvido no <span className="contrast">Visual Studio Code</span>. Feito com <span className="contrast">React.js</span>, <span className="contrast">Sass</span> e <span className="contrast">Ui Material</span>.',
+    },
   },
 };
 
