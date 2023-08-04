@@ -27,10 +27,10 @@ const ContactForm = () => {
     setChanges(changes + 1);
   };
 
-  const formValidation = () => {
-    setChanges(changes + 1);
-    return nameValidation() && emailValidation() && msgValidation();
-  };
+  // const formValidation = () => {
+  //   setChanges(changes + 1);
+  //   return nameValidation() && emailValidation() && msgValidation();
+  // };
 
   const nameValidation = () => {
     return (required(name) && max(name, 50)) || !changes;

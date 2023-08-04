@@ -1,4 +1,4 @@
-export const required = (value) => value != "";
+export const required = (value) => value !== "";
 
 export const max = (value, max) => value.length <= max;
 

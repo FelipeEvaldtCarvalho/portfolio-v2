@@ -8,6 +8,9 @@
   padding: 1rem;
   justify-content: space-between;
   transition: 0.1s;
+  position: fixed;
+  z-index: 3;
+  background-color: var(--color-background);
 
   @media screen and (min-width: $tablet-min) {
     padding: 2rem;

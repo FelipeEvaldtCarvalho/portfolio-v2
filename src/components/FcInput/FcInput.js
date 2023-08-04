@@ -12,11 +12,11 @@ import "./FcInput";
 const StyledFcInput = styled(TextField)(() => {
   return {
     "& .MuiFormLabel-root": {
-      top: 3,
+      top: 1,
       color: getFontColor(),
       fontSize: "20px",
       paddingLeft: "16px",
-      zIndex: 2,
+      zIndex: 1,
       '&[data-shrink="true"]': {
         padding: 0,
         color: getFormGreen(),
