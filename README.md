@@ -1,8 +1,6 @@
 # Felipe Carvalho Portfolio V2
 
-Portfolio project developed in React JS!\
-This document aims to provide an overview of the main features,\
-code structure and instructions to run and develop this project.
+Portfolio project developed in React JS!
 
 ## Available Scripts
 
