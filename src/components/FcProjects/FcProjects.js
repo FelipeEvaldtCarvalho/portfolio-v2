@@ -109,7 +109,11 @@ export const FcProjects = () => {
           </button>
         </nav>
 
-        <a href="/" className="projects__content__link">
+        <a
+          href="https://github.com/FelipeEvaldtCarvalho?tab=repositories"
+          target="_blank"
+          className="projects__content__link"
+        >
           <ion-icon name="logo-github"></ion-icon>
           {t("projects.git")}
         </a>
