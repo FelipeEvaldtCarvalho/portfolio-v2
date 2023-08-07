@@ -94,7 +94,7 @@ export const FcContactMe = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <FcTypography tag="h2" fontWeight={600}>
         <span className="title-section">{t("contactMe.title")}</span>
       </FcTypography>

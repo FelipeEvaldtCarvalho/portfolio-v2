@@ -31,4 +31,20 @@ body {
     backdrop-filter: blur(5.1px);
     -webkit-backdrop-filter: blur(5.1px);
   }
+
+  .nav {
+    visibility: hidden;
+    &-options__lang-btn.link-btn {
+      transition: 0.2s ease opacity;
+      opacity: 0;
+    }
+
+    .menu-open {
+      visibility: visible;
+    }
+  }
+
+  .MuiFormLabel-root {
+    filter: blur(5.1px);
+  }
 }

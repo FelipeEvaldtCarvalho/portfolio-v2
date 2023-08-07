@@ -70,7 +70,7 @@ export const FcProjects = () => {
   );
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <FcTypography tag="h2" fontWeight={600}>
         <span className="title-section">{t("projects.title")}</span>
       </FcTypography>

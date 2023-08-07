@@ -5,7 +5,7 @@ import "./FcAboutMe.scss";
 export const FcAboutMe = () => {
   const { t } = useTranslation();
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about__text">
         <FcTypography tag="h2" fontWeight={600}>
           <span className="title-section">{t("about.title")}</span>

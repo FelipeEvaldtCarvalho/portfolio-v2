@@ -33,7 +33,7 @@ export const FcExperiences = () => {
     </>
   );
   return (
-    <section className="experiences">
+    <section id="experiences" className="experiences">
       <FcTypography tag="h2" fontWeight={600}>
         <span className="title-section">{t("experiences.title")}</span>
       </FcTypography>

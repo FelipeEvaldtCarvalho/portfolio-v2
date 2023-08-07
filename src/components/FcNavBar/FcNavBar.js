@@ -14,6 +14,8 @@ import {
 
 export const FcNavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [lastScrollPos, setLastScrollPos] = useState(window.scrollY);
+  const [hideNav, setHideNav] = useState(false);
   const { t, i18n } = useTranslation();
   const theme = useSelector((state) => state.settings.theme);
   const lang = useSelector((state) => state.settings.lang);
@@ -51,31 +53,58 @@ export const FcNavBar = () => {
     unblockBodyScroll();
   };
   const navLinks = [
-    { text: "navBar.about" },
-    { text: "navBar.experiences" },
-    { text: "navBar.projects" },
-    { text: "navBar.skills" },
-    { text: "navBar.contactMe" },
+    { text: "navBar.about", link: "#about" },
+    {
+      text: "navBar.skills",
+      link: "#skills",
+    },
+    {
+      text: "navBar.projects",
+      link: "#projects",
+    },
+    {
+      text: "navBar.experiences",
+      link: "#experiences",
+    },
+    {
+      text: "navBar.contactMe",
+      link: "#contact",
+    },
   ];
   const renderNavLinks = navLinks.map((link, index) => (
-    <FcTypography
+    <a
       key={index}
-      weight={500}
-      tag="a"
-      href="/"
-      size={18}
+      style={{ fontWeight: 500, fontSize: 18 }}
+      href={link.link}
       className="nav-options-links-list__links"
+      onClick={closeMobileMenu}
     >
       {t(link.text)}
-    </FcTypography>
+    </a>
   ));
   useEffect(() => {
     if (windowWidth > 768) {
       closeMobileMenu();
     }
   }, [windowWidth]);
+
+  const handleScroll = () => {
+    setHideNav(window.scrollY > lastScrollPos);
+    setLastScrollPos(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
   return (
-    <nav className="nav" onLoad={() => i18n.changeLanguage(lang)}>
+    <nav
+      className={`nav ${hideNav ? "hide" : ""}`}
+      onLoad={() => i18n.changeLanguage(lang)}
+    >
       <FcLogo height={30} width={77} />
       <div className="nav-options">
         <div className={`nav-options-links ${menuOpen ? "menu-open" : ""}`}>

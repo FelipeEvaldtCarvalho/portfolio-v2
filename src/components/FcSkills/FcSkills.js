@@ -15,7 +15,7 @@ import {
 export const FcSkills = () => {
   const { t } = useTranslation();
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <FcTypography tag="h2" fontWeight={600}>
         <span className="title-section">{t("skills.title")}</span>
       </FcTypography>
