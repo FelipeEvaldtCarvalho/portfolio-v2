@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { links } from "../../services/links";
 import { useState, useRef } from "react";
 import { required, max, email as emailV } from "../../services/validations";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import Alert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
 
