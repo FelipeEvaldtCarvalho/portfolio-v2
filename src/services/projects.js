@@ -76,7 +76,12 @@ export const projects = [
     description: "projects.wellPlayed.description",
     mobileVideo: "/videos/wp-mobile.mp4",
     desktopVideo: "/videos/wp-desktop.mp4",
-    links: [{ url: "https://google.com", icon: "link-sharp" }],
+    links: [
+      {
+        url: "https://github.com/FelipeEvaldtCarvalho/wp-project",
+        icon: "logo-github",
+      },
+    ],
   },
 ];
 
