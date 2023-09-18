@@ -112,6 +112,7 @@ export const FcProjects = () => {
         <a
           href="https://github.com/FelipeEvaldtCarvalho?tab=repositories"
           target="_blank"
+          rel="noreferrer"
           className="projects__content__link"
         >
           <ion-icon name="logo-github"></ion-icon>

@@ -44,13 +44,14 @@ const StyledFcInput = styled(TextField)(() => {
   };
 });
 
-export const FcInput = ({ label, type, error, model, value }) => {
+export const FcInput = ({ label, type, error, model, value, name }) => {
   const theme = useSelector((state) => state.settings.theme);
 
   const handleChange = (e) => (model ? model(e) : false);
 
   return (
     <StyledFcInput
+      name={name}
       onChange={handleChange}
       value={value}
       autoComplete="off"

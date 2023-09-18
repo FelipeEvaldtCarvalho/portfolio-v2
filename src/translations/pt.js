@@ -74,9 +74,17 @@ const ptBr = {
       clean: "Limpar",
       description:
         "Estou ansioso para receber sua mensagem e ajudar a transformar suas ideias em realidade. Fique à vontade para entrar em contato ou conectar-se comigo em minhas redes. ",
+      msgSuccess: "Mensagem enviada com sucesso!",
+      msgFail: "Falha ao enviar a mensagem!",
     },
     footer: {
       text: 'Desenhado no <span className="contrast">Figma</span> e desenvolvido no <span className="contrast">Visual Studio Code</span>. Feito com <span className="contrast">React.js</span>, <span className="contrast">Sass</span> e <span className="contrast">Ui Material</span>.',
+    },
+    validations: {
+      required: "Campo obrigatório!",
+      email: "Digite um email válido!",
+      max: "O máximo de carateres para esse campo é",
+      min: "O mínimo de carateres para esse campo é",
     },
   },
 };
