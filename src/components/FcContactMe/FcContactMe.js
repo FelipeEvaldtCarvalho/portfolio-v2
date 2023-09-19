@@ -19,7 +19,7 @@ const ContactForm = () => {
     handleSubmit,
     register,
     reset,
-    formState: { errors, dirtyFields },
+    formState: { errors },
   } = useForm();
 
   const onSubmit = () => {
