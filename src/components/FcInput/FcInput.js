@@ -44,7 +44,16 @@ const StyledFcInput = styled(TextField)(() => {
   };
 });
 
-export const FcInput = ({ label, type, error, model, value, name }) => {
+export const FcInput = ({
+  label,
+  type,
+  error,
+  model,
+  value,
+  name,
+  helperText,
+  register,
+}) => {
   const theme = useSelector((state) => state.settings.theme);
 
   const handleChange = (e) => (model ? model(e) : false);
@@ -60,6 +69,8 @@ export const FcInput = ({ label, type, error, model, value, name }) => {
       variant="standard"
       inputProps={{ inputMode: type || "text" }}
       error={error}
+      helperText={helperText}
+      {...register}
     />
   );
 };
