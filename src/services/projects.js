@@ -6,7 +6,7 @@ export const projects = [
     desktopVideo: "/videos/pv-desktop.mp4",
     links: [
       {
-        url: "https://inquisitive-shortbread-6bf2ce.netlify.app/",
+        url: "https://pra-vibrar-v2.netlify.app/",
         icon: "link-sharp",
       },
       {
@@ -26,11 +26,11 @@ export const projects = [
     desktopVideo: "/videos/nb-desktop.mp4",
     links: [
       {
-        url: "https://wondrous-baklava-bfb7f9.netlify.app/",
+        url: "https://natural-box.netlify.app/",
         icon: "link-sharp",
       },
       {
-        url: "https://githubhttps://github.com/FelipeEvaldtCarvalho/naturalbox.com/FelipeEvaldtCarvalho/pra-vibrar-v2",
+        url: "https://github.com/FelipeEvaldtCarvalho/naturalbox",
         icon: "logo-github",
       },
       {
@@ -46,7 +46,7 @@ export const projects = [
     desktopVideo: "/videos/pv1-desktop.mp4",
     links: [
       {
-        url: "https://github.com/FelipeEvaldtCarvalho/-portfolio",
+        url: "https://portfolio-felipe-carvalho-v1.netlify.app/",
         icon: "link-sharp",
       },
       {
@@ -62,7 +62,7 @@ export const projects = [
     desktopVideo: "/videos/ms-desktop.mp4",
     links: [
       {
-        url: "https://legendary-sunburst-f03b23.netlify.app",
+        url: "https://my-squad-react.netlify.app/",
         icon: "link-sharp",
       },
       {
